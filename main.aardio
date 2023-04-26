@@ -1,0 +1,113 @@
+import win;
+import win.ui;
+import fsys.dlg;
+import win.reg;
+import wsock.tcp.simpleHttpServer;
+
+var mainForm;
+var theApp;
+
+// 直接双击md文件时获取该文件路径
+var setupMdPath = _ARGV[1];
+
+/*
+关联文件
+*/
+function associatedFile(exePath, fileType){
+	var regPath = "HKEY_CLASSES_ROOT\" ++ fileType ++ "\shell\open\command\";
+	var reg = win.reg(regPath, true);
+	// 先查询是否存在
+	if (reg) {
+		// 和当前打开的程序路径不一致则更新为当前程序路径
+		if (reg.queryValue("") != regPath) {
+			reg.setSzValue("",`"`+exePath+`" "%1"`)
+			reg.close();
+		}
+		return;	
+	}
+
+	  reg = win.reg(regPath);
+	  // 没有权限时会空
+	  if (reg) {
+	  	reg.setSzValue("",`"`+exePath+`" "%1"`)
+		reg.close();
+	  }
+}
+
+function bindingJs(theApp){
+	theApp.external = {
+       openFileDialog = function() {
+         return fsys.dlg.open('Markdown文件|*.md|所有文件|*.*||',,,mainForm);
+      };
+    
+      openSaveDialog = function() {
+         return fsys.dlg.save('Markdown文件|*.md|所有文件|*.*||',,,mainForm);
+      }; 
+    
+       readFile = function(fpath) {
+        return string.load(fpath);
+      };
+ 
+ 
+      writeFile = function(fpath, content) {
+        return string.save(fpath, content);
+      };
+ 
+      alert = function(msg) {
+         return win.msgbox(msg, "提示", 0x40, mainForm);
+      }; 
+    
+      alertError = function(msg) {
+         return win.msgboxErr(msg, "提示", mainForm);
+      }; 
+      
+      getSetupFile = function() {
+      	return setupMdPath;
+      };
+  }
+}
+
+import web.view;
+// import chrome.path;
+// var chromePath = chrome.path(false);
+var wb2 = web.view.getRuntimeInfo(); 
+
+if (wb2) {
+/*DSG{{*/
+mainForm = win.form(text="Nice Markdown";right=1065;bottom=615)
+mainForm.add()
+/*}}*/
+
+theApp  = web.view(mainForm, io.appData("/xmagic/nice-markdown/user-data"), "--zoom-control-enabled"); 
+	theApp.enableDevTools(false);
+	
+	//导出为 JavaScript 中的 aardio 对象
+	bindingJs(theApp);
+
+	theApp.go("\web\index.html");
+	
+
+//onclose事件中
+mainForm.onClose = function(hwnd,message,wParam,lParam){
+	var hasChange = theApp.xcall("getChange");
+	if (hasChange) {
+		var id = win.msgbox("内容有变动,是否关闭窗口？", "提示", 0x1 | 0x20);
+		if (id != 1) {
+			return false;
+		}
+	}
+};
+
+mainForm.show(/*_SW_MAXIMIZE*/);
+
+} else {
+  import chrome.app;
+  theApp  = chrome.app(); 
+  //导出为 JavaScript 中的 aardio 对象
+  bindingJs(theApp);
+  theApp.center();
+  theApp.start("\web\index.html");
+}
+
+associatedFile(io._exepath, ".md")
+win.loopMessage();

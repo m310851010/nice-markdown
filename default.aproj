@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="Nice Markdown" libEmbed="true" icon="web\favicon.ico" ui="win" output="Nice Markdown.exe" CompanyName="xMagic" FileDescription="Markdown工具" LegalCopyright="Copyright (C) 310851010@qq.com 2023" ProductName="Nice Markdown" InternalName="Nice Markdown" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/dist/" dstrip="false" local="false" ignored="false">
+	<file name="main" path="main.aardio"/>
+	<folder name="窗体" path="forms" comment="" embed="true" local="false" ignored="false"/>
+	<folder name="web" path="web" comment="web" local="true" embed="true" ignored="false">
+		<file name="editormd.min.js" path="web\editormd.min.js" comment="web\editormd.min.js"/>
+		<file name="favicon.ico" path="web\favicon.ico" comment="web\favicon.ico"/>
+		<file name="index.html" path="web\index.html" comment="web\index.html"/>
+		<folder name="css" path="web\css" comment="web\css" local="true" embed="true" ignored="false">
+			<file name="editormd.min.css" path="web\css\editormd.min.css" comment="web\css\editormd.min.css"/>
+		</folder>
+		<folder name="fonts" path="web\fonts" comment="web\fonts" local="true" embed="true" ignored="false">
+			<file name="fontawesome-webfont.eot" path="web\fonts\fontawesome-webfont.eot" comment="web\fonts\fontawesome-webfont.eot"/>
+			<file name="fontawesome-webfont.svg" path="web\fonts\fontawesome-webfont.svg" comment="web\fonts\fontawesome-webfont.svg"/>
+			<file name="fontawesome-webfont.ttf" path="web\fonts\fontawesome-webfont.ttf" comment="web\fonts\fontawesome-webfont.ttf"/>
+			<file name="fontawesome-webfont.woff" path="web\fonts\fontawesome-webfont.woff" comment="web\fonts\fontawesome-webfont.woff"/>
+			<file name="fontawesome-webfont.woff2" path="web\fonts\fontawesome-webfont.woff2" comment="web\fonts\fontawesome-webfont.woff2"/>
+			<file name="FontAwesome.otf" path="web\fonts\FontAwesome.otf" comment="web\fonts\FontAwesome.otf"/>
+		</folder>
+		<folder name="images" path="web\images" comment="web\images" local="true" embed="true" ignored="false">
+			<file name="loading.gif" path="web\images\loading.gif" comment="web\images\loading.gif"/>
+			<folder name="logos" path="web\images\logos" comment="web\images\logos">
+				<file name="editormd-logo-320x320.png" path="web\images\logos\editormd-logo-320x320.png" comment="web\images\logos\editormd-logo-320x320.png"/>
+			</folder>
+		</folder>
+		<folder name="languages" path="web\languages" comment="web\languages" local="true" embed="true" ignored="false">
+			<file name="en.js" path="web\languages\en.js" comment="web\languages\en.js"/>
+		</folder>
+		<folder name="lib" path="web\lib" comment="web\lib" local="true" embed="true" ignored="false">
+			<file name="flowchart.min.js" path="web\lib\flowchart.min.js" comment="web\lib\flowchart.min.js"/>
+			<file name="jquery.flowchart.min.js" path="web\lib\jquery.flowchart.min.js" comment="web\lib\jquery.flowchart.min.js"/>
+			<file name="marked.min.js" path="web\lib\marked.min.js" comment="web\lib\marked.min.js"/>
+			<file name="prettify.min.js" path="web\lib\prettify.min.js" comment="web\lib\prettify.min.js"/>
+			<file name="raphael.min.js" path="web\lib\raphael.min.js" comment="web\lib\raphael.min.js"/>
+			<file name="sequence-diagram.min.js" path="web\lib\sequence-diagram.min.js" comment="web\lib\sequence-diagram.min.js"/>
+			<file name="underscore.min.js" path="web\lib\underscore.min.js" comment="web\lib\underscore.min.js"/>
+			<folder name="codemirror" path="web\lib\codemirror" comment="web\lib\codemirror" local="true" embed="true" ignored="false">
+				<file name="addons.min.js" path="web\lib\codemirror\addons.min.js" comment="web\lib\codemirror\addons.min.js"/>
+				<file name="AUTHORS" path="web\lib\codemirror\AUTHORS" comment="web\lib\codemirror\AUTHORS"/>
+				<file name="bower.json" path="web\lib\codemirror\bower.json" comment="web\lib\codemirror\bower.json"/>
+				<file name="codemirror.min.css" path="web\lib\codemirror\codemirror.min.css" comment="web\lib\codemirror\codemirror.min.css"/>
+				<file name="codemirror.min.js" path="web\lib\codemirror\codemirror.min.js" comment="web\lib\codemirror\codemirror.min.js"/>
+				<file name="LICENSE" path="web\lib\codemirror\LICENSE" comment="web\lib\codemirror\LICENSE"/>
+				<file name="modes.min.js" path="web\lib\codemirror\modes.min.js" comment="web\lib\codemirror\modes.min.js"/>
+				<file name="package.json" path="web\lib\codemirror\package.json" comment="web\lib\codemirror\package.json"/>
+				<file name="README.md" path="web\lib\codemirror\README.md" comment="web\lib\codemirror\README.md"/>
+				<folder name="addon" path="web\lib\codemirror\addon" comment="web\lib\codemirror\addon">
+					<folder name="comment" path="web\lib\codemirror\addon\comment" comment="web\lib\codemirror\addon\comment">
+						<file name="comment.js" path="web\lib\codemirror\addon\comment\comment.js" comment="web\lib\codemirror\addon\comment\comment.js"/>
+						<file name="continuecomment.js" path="web\lib\codemirror\addon\comment\continuecomment.js" comment="web\lib\codemirror\addon\comment\continuecomment.js"/>
+					</folder>
+					<folder name="dialog" path="web\lib\codemirror\addon\dialog" comment="web\lib\codemirror\addon\dialog">
+						<file name="dialog.css" path="web\lib\codemirror\addon\dialog\dialog.css" comment="web\lib\codemirror\addon\dialog\dialog.css"/>
+						<file name="dialog.js" path="web\lib\codemirror\addon\dialog\dialog.js" comment="web\lib\codemirror\addon\dialog\dialog.js"/>
+					</folder>
+					<folder name="display" path="web\lib\codemirror\addon\display" comment="web\lib\codemirror\addon\display">
+						<file name="fullscreen.css" path="web\lib\codemirror\addon\display\fullscreen.css" comment="web\lib\codemirror\addon\display\fullscreen.css"/>
+						<file name="fullscreen.js" path="web\lib\codemirror\addon\display\fullscreen.js" comment="web\lib\codemirror\addon\display\fullscreen.js"/>
+						<file name="panel.js" path="web\lib\codemirror\addon\display\panel.js" comment="web\lib\codemirror\addon\display\panel.js"/>
+						<file name="placeholder.js" path="web\lib\codemirror\addon\display\placeholder.js" comment="web\lib\codemirror\addon\display\placeholder.js"/>
+						<file name="rulers.js" path="web\lib\codemirror\addon\display\rulers.js" comment="web\lib\codemirror\addon\display\rulers.js"/>
+					</folder>
+					<folder name="edit" path="web\lib\codemirror\addon\edit" comment="web\lib\codemirror\addon\edit">
+						<file name="closebrackets.js" path="web\lib\codemirror\addon\edit\closebrackets.js" comment="web\lib\codemirror\addon\edit\closebrackets.js"/>
+						<file name="closetag.js" path="web\lib\codemirror\addon\edit\closetag.js" comment="web\lib\codemirror\addon\edit\closetag.js"/>
+						<file name="continuelist.js" path="web\lib\codemirror\addon\edit\continuelist.js" comment="web\lib\codemirror\addon\edit\continuelist.js"/>
+						<file name="matchbrackets.js" path="web\lib\codemirror\addon\edit\matchbrackets.js" comment="web\lib\codemirror\addon\edit\matchbrackets.js"/>
+						<file name="matchtags.js" path="web\lib\codemirror\addon\edit\matchtags.js" comment="web\lib\codemirror\addon\edit\matchtags.js"/>
+						<file name="trailingspace.js" path="web\lib\codemirror\addon\edit\trailingspace.js" comment="web\lib\codemirror\addon\edit\trailingspace.js"/>
+					</folder>
+					<folder name="fold" path="web\lib\codemirror\addon\fold" comment="web\lib\codemirror\addon\fold">
+						<file name="brace-fold.js" path="web\lib\codemirror\addon\fold\brace-fold.js" comment="web\lib\codemirror\addon\fold\brace-fold.js"/>
+						<file name="comment-fold.js" path="web\lib\codemirror\addon\fold\comment-fold.js" comment="web\lib\codemirror\addon\fold\comment-fold.js"/>
+						<file name="foldcode.js" path="web\lib\codemirror\addon\fold\foldcode.js" comment="web\lib\codemirror\addon\fold\foldcode.js"/>
+						<file name="foldgutter.css" path="web\lib\codemirror\addon\fold\foldgutter.css" comment="web\lib\codemirror\addon\fold\foldgutter.css"/>
+						<file name="foldgutter.js" path="web\lib\codemirror\addon\fold\foldgutter.js" comment="web\lib\codemirror\addon\fold\foldgutter.js"/>
+						<file name="indent-fold.js" path="web\lib\codemirror\addon\fold\indent-fold.js" comment="web\lib\codemirror\addon\fold\indent-fold.js"/>
+						<file name="markdown-fold.js" path="web\lib\codemirror\addon\fold\markdown-fold.js" comment="web\lib\codemirror\addon\fold\markdown-fold.js"/>
+						<file name="xml-fold.js" path="web\lib\codemirror\addon\fold\xml-fold.js" comment="web\lib\codemirror\addon\fold\xml-fold.js"/>
+					</folder>
+					<folder name="hint" path="web\lib\codemirror\addon\hint" comment="web\lib\codemirror\addon\hint">
+						<file name="anyword-hint.js" path="web\lib\codemirror\addon\hint\anyword-hint.js" comment="web\lib\codemirror\addon\hint\anyword-hint.js"/>
+						<file name="css-hint.js" path="web\lib\codemirror\addon\hint\css-hint.js" comment="web\lib\codemirror\addon\hint\css-hint.js"/>
+						<file name="html-hint.js" path="web\lib\codemirror\addon\hint\html-hint.js" comment="web\lib\codemirror\addon\hint\html-hint.js"/>
+						<file name="javascript-hint.js" path="web\lib\codemirror\addon\hint\javascript-hint.js" comment="web\lib\codemirror\addon\hint\javascript-hint.js"/>
+						<file name="show-hint.css" path="web\lib\codemirror\addon\hint\show-hint.css" comment="web\lib\codemirror\addon\hint\show-hint.css"/>
+						<file name="show-hint.js" path="web\lib\codemirror\addon\hint\show-hint.js" comment="web\lib\codemirror\addon\hint\show-hint.js"/>
+						<file name="sql-hint.js" path="web\lib\codemirror\addon\hint\sql-hint.js" comment="web\lib\codemirror\addon\hint\sql-hint.js"/>
+						<file name="xml-hint.js" path="web\lib\codemirror\addon\hint\xml-hint.js" comment="web\lib\codemirror\addon\hint\xml-hint.js"/>
+					</folder>
+					<folder name="lint" path="web\lib\codemirror\addon\lint" comment="web\lib\codemirror\addon\lint">
+						<file name="coffeescript-lint.js" path="web\lib\codemirror\addon\lint\coffeescript-lint.js" comment="web\lib\codemirror\addon\lint\coffeescript-lint.js"/>
+						<file name="css-lint.js" path="web\lib\codemirror\addon\lint\css-lint.js" comment="web\lib\codemirror\addon\lint\css-lint.js"/>
+						<file name="javascript-lint.js" path="web\lib\codemirror\addon\lint\javascript-lint.js" comment="web\lib\codemirror\addon\lint\javascript-lint.js"/>
+						<file name="json-lint.js" path="web\lib\codemirror\addon\lint\json-lint.js" comment="web\lib\codemirror\addon\lint\json-lint.js"/>
+						<file name="lint.css" path="web\lib\codemirror\addon\lint\lint.css" comment="web\lib\codemirror\addon\lint\lint.css"/>
+						<file name="lint.js" path="web\lib\codemirror\addon\lint\lint.js" comment="web\lib\codemirror\addon\lint\lint.js"/>
+						<file name="yaml-lint.js" path="web\lib\codemirror\addon\lint\yaml-lint.js" comment="web\lib\codemirror\addon\lint\yaml-lint.js"/>
+					</folder>
+					<folder name="merge" path="web\lib\codemirror\addon\merge" comment="web\lib\codemirror\addon\merge">
+						<file name="merge.css" path="web\lib\codemirror\addon\merge\merge.css" comment="web\lib\codemirror\addon\merge\merge.css"/>
+						<file name="merge.js" path="web\lib\codemirror\addon\merge\merge.js" comment="web\lib\codemirror\addon\merge\merge.js"/>
+					</folder>
+					<folder name="mode" path="web\lib\codemirror\addon\mode" comment="web\lib\codemirror\addon\mode">
+						<file name="loadmode.js" path="web\lib\codemirror\addon\mode\loadmode.js" comment="web\lib\codemirror\addon\mode\loadmode.js"/>
+						<file name="multiplex.js" path="web\lib\codemirror\addon\mode\multiplex.js" comment="web\lib\codemirror\addon\mode\multiplex.js"/>
+						<file name="multiplex_test.js" path="web\lib\codemirror\addon\mode\multiplex_test.js" comment="web\lib\codemirror\addon\mode\multiplex_test.js"/>
+						<file name="overlay.js" path="web\lib\codemirror\addon\mode\overlay.js" comment="web\lib\codemirror\addon\mode\overlay.js"/>
+						<file name="simple.js" path="web\lib\codemirror\addon\mode\simple.js" comment="web\lib\codemirror\addon\mode\simple.js"/>
+					</folder>
+					<folder name="runmode" path="web\lib\codemirror\addon\runmode" comment="web\lib\codemirror\addon\runmode">
+						<file name="colorize.js" path="web\lib\codemirror\addon\runmode\colorize.js" comment="web\lib\codemirror\addon\runmode\colorize.js"/>
+						<file name="runmode-standalone.js" path="web\lib\codemirror\addon\runmode\runmode-standalone.js" comment="web\lib\codemirror\addon\runmode\runmode-standalone.js"/>
+						<file name="runmode.js" path="web\lib\codemirror\addon\runmode\runmode.js" comment="web\lib\codemirror\addon\runmode\runmode.js"/>
+						<file name="runmode.node.js" path="web\lib\codemirror\addon\runmode\runmode.node.js" comment="web\lib\codemirror\addon\runmode\runmode.node.js"/>
+					</folder>
+					<folder name="scroll" path="web\lib\codemirror\addon\scroll" comment="web\lib\codemirror\addon\scroll">
+						<file name="annotatescrollbar.js" path="web\lib\codemirror\addon\scroll\annotatescrollbar.js" comment="web\lib\codemirror\addon\scroll\annotatescrollbar.js"/>
+						<file name="scrollpastend.js" path="web\lib\codemirror\addon\scroll\scrollpastend.js" comment="web\lib\codemirror\addon\scroll\scrollpastend.js"/>
+						<file name="simplescrollbars.css" path="web\lib\codemirror\addon\scroll\simplescrollbars.css" comment="web\lib\codemirror\addon\scroll\simplescrollbars.css"/>
+						<file name="simplescrollbars.js" path="web\lib\codemirror\addon\scroll\simplescrollbars.js" comment="web\lib\codemirror\addon\scroll\simplescrollbars.js"/>
+					</folder>
+					<folder name="search" path="web\lib\codemirror\addon\search" comment="web\lib\codemirror\addon\search">
+						<file name="match-highlighter.js" path="web\lib\codemirror\addon\search\match-highlighter.js" comment="web\lib\codemirror\addon\search\match-highlighter.js"/>
+						<file name="matchesonscrollbar.css" path="web\lib\codemirror\addon\search\matchesonscrollbar.css" comment="web\lib\codemirror\addon\search\matchesonscrollbar.css"/>
+						<file name="matchesonscrollbar.js" path="web\lib\codemirror\addon\search\matchesonscrollbar.js" comment="web\lib\codemirror\addon\search\matchesonscrollbar.js"/>
+						<file name="search.js" path="web\lib\codemirror\addon\search\search.js" comment="web\lib\codemirror\addon\search\search.js"/>
+						<file name="searchcursor.js" path="web\lib\codemirror\addon\search\searchcursor.js" comment="web\lib\codemirror\addon\search\searchcursor.js"/>
+					</folder>
+					<folder name="selection" path="web\lib\codemirror\addon\selection" comment="web\lib\codemirror\addon\selection">
+						<file name="active-line.js" path="web\lib\codemirror\addon\selection\active-line.js" comment="web\lib\codemirror\addon\selection\active-line.js"/>
+						<file name="mark-selection.js" path="web\lib\codemirror\addon\selection\mark-selection.js" comment="web\lib\codemirror\addon\selection\mark-selection.js"/>
+						<file name="selection-pointer.js" path="web\lib\codemirror\addon\selection\selection-pointer.js" comment="web\lib\codemirror\addon\selection\selection-pointer.js"/>
+					</folder>
+					<folder name="tern" path="web\lib\codemirror\addon\tern" comment="web\lib\codemirror\addon\tern">
+						<file name="tern.css" path="web\lib\codemirror\addon\tern\tern.css" comment="web\lib\codemirror\addon\tern\tern.css"/>
+						<file name="tern.js" path="web\lib\codemirror\addon\tern\tern.js" comment="web\lib\codemirror\addon\tern\tern.js"/>
+						<file name="worker.js" path="web\lib\codemirror\addon\tern\worker.js" comment="web\lib\codemirror\addon\tern\worker.js"/>
+					</folder>
+					<folder name="wrap" path="web\lib\codemirror\addon\wrap" comment="web\lib\codemirror\addon\wrap">
+						<file name="hardwrap.js" path="web\lib\codemirror\addon\wrap\hardwrap.js" comment="web\lib\codemirror\addon\wrap\hardwrap.js"/>
+					</folder>
+				</folder>
+				<folder name="lib" path="web\lib\codemirror\lib" comment="web\lib\codemirror\lib">
+					<file name="codemirror.css" path="web\lib\codemirror\lib\codemirror.css" comment="web\lib\codemirror\lib\codemirror.css"/>
+					<file name="codemirror.js" path="web\lib\codemirror\lib\codemirror.js" comment="web\lib\codemirror\lib\codemirror.js"/>
+				</folder>
+				<folder name="mode" path="web\lib\codemirror\mode" comment="web\lib\codemirror\mode">
+					<file name="index.html" path="web\lib\codemirror\mode\index.html" comment="web\lib\codemirror\mode\index.html"/>
+					<file name="meta.js" path="web\lib\codemirror\mode\meta.js" comment="web\lib\codemirror\mode\meta.js"/>
+					<folder name="apl" path="web\lib\codemirror\mode\apl" comment="web\lib\codemirror\mode\apl">
+						<file name="apl.js" path="web\lib\codemirror\mode\apl\apl.js" comment="web\lib\codemirror\mode\apl\apl.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\apl\index.html" comment="web\lib\codemirror\mode\apl\index.html"/>
+					</folder>
+					<folder name="asterisk" path="web\lib\codemirror\mode\asterisk" comment="web\lib\codemirror\mode\asterisk">
+						<file name="asterisk.js" path="web\lib\codemirror\mode\asterisk\asterisk.js" comment="web\lib\codemirror\mode\asterisk\asterisk.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\asterisk\index.html" comment="web\lib\codemirror\mode\asterisk\index.html"/>
+					</folder>
+					<folder name="clike" path="web\lib\codemirror\mode\clike" comment="web\lib\codemirror\mode\clike">
+						<file name="clike.js" path="web\lib\codemirror\mode\clike\clike.js" comment="web\lib\codemirror\mode\clike\clike.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\clike\index.html" comment="web\lib\codemirror\mode\clike\index.html"/>
+						<file name="scala.html" path="web\lib\codemirror\mode\clike\scala.html" comment="web\lib\codemirror\mode\clike\scala.html"/>
+					</folder>
+					<folder name="clojure" path="web\lib\codemirror\mode\clojure" comment="web\lib\codemirror\mode\clojure">
+						<file name="clojure.js" path="web\lib\codemirror\mode\clojure\clojure.js" comment="web\lib\codemirror\mode\clojure\clojure.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\clojure\index.html" comment="web\lib\codemirror\mode\clojure\index.html"/>
+					</folder>
+					<folder name="cobol" path="web\lib\codemirror\mode\cobol" comment="web\lib\codemirror\mode\cobol">
+						<file name="cobol.js" path="web\lib\codemirror\mode\cobol\cobol.js" comment="web\lib\codemirror\mode\cobol\cobol.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\cobol\index.html" comment="web\lib\codemirror\mode\cobol\index.html"/>
+					</folder>
+					<folder name="coffeescript" path="web\lib\codemirror\mode\coffeescript" comment="web\lib\codemirror\mode\coffeescript">
+						<file name="coffeescript.js" path="web\lib\codemirror\mode\coffeescript\coffeescript.js" comment="web\lib\codemirror\mode\coffeescript\coffeescript.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\coffeescript\index.html" comment="web\lib\codemirror\mode\coffeescript\index.html"/>
+					</folder>
+					<folder name="commonlisp" path="web\lib\codemirror\mode\commonlisp" comment="web\lib\codemirror\mode\commonlisp">
+						<file name="commonlisp.js" path="web\lib\codemirror\mode\commonlisp\commonlisp.js" comment="web\lib\codemirror\mode\commonlisp\commonlisp.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\commonlisp\index.html" comment="web\lib\codemirror\mode\commonlisp\index.html"/>
+					</folder>
+					<folder name="css" path="web\lib\codemirror\mode\css" comment="web\lib\codemirror\mode\css">
+						<file name="css.js" path="web\lib\codemirror\mode\css\css.js" comment="web\lib\codemirror\mode\css\css.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\css\index.html" comment="web\lib\codemirror\mode\css\index.html"/>
+						<file name="less.html" path="web\lib\codemirror\mode\css\less.html" comment="web\lib\codemirror\mode\css\less.html"/>
+						<file name="less_test.js" path="web\lib\codemirror\mode\css\less_test.js" comment="web\lib\codemirror\mode\css\less_test.js"/>
+						<file name="scss.html" path="web\lib\codemirror\mode\css\scss.html" comment="web\lib\codemirror\mode\css\scss.html"/>
+						<file name="scss_test.js" path="web\lib\codemirror\mode\css\scss_test.js" comment="web\lib\codemirror\mode\css\scss_test.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\css\test.js" comment="web\lib\codemirror\mode\css\test.js"/>
+					</folder>
+					<folder name="cypher" path="web\lib\codemirror\mode\cypher" comment="web\lib\codemirror\mode\cypher">
+						<file name="cypher.js" path="web\lib\codemirror\mode\cypher\cypher.js" comment="web\lib\codemirror\mode\cypher\cypher.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\cypher\index.html" comment="web\lib\codemirror\mode\cypher\index.html"/>
+					</folder>
+					<folder name="d" path="web\lib\codemirror\mode\d" comment="web\lib\codemirror\mode\d">
+						<file name="d.js" path="web\lib\codemirror\mode\d\d.js" comment="web\lib\codemirror\mode\d\d.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\d\index.html" comment="web\lib\codemirror\mode\d\index.html"/>
+					</folder>
+					<folder name="dart" path="web\lib\codemirror\mode\dart" comment="web\lib\codemirror\mode\dart">
+						<file name="dart.js" path="web\lib\codemirror\mode\dart\dart.js" comment="web\lib\codemirror\mode\dart\dart.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\dart\index.html" comment="web\lib\codemirror\mode\dart\index.html"/>
+					</folder>
+					<folder name="diff" path="web\lib\codemirror\mode\diff" comment="web\lib\codemirror\mode\diff">
+						<file name="diff.js" path="web\lib\codemirror\mode\diff\diff.js" comment="web\lib\codemirror\mode\diff\diff.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\diff\index.html" comment="web\lib\codemirror\mode\diff\index.html"/>
+					</folder>
+					<folder name="django" path="web\lib\codemirror\mode\django" comment="web\lib\codemirror\mode\django">
+						<file name="django.js" path="web\lib\codemirror\mode\django\django.js" comment="web\lib\codemirror\mode\django\django.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\django\index.html" comment="web\lib\codemirror\mode\django\index.html"/>
+					</folder>
+					<folder name="dockerfile" path="web\lib\codemirror\mode\dockerfile" comment="web\lib\codemirror\mode\dockerfile">
+						<file name="dockerfile.js" path="web\lib\codemirror\mode\dockerfile\dockerfile.js" comment="web\lib\codemirror\mode\dockerfile\dockerfile.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\dockerfile\index.html" comment="web\lib\codemirror\mode\dockerfile\index.html"/>
+					</folder>
+					<folder name="dtd" path="web\lib\codemirror\mode\dtd" comment="web\lib\codemirror\mode\dtd">
+						<file name="dtd.js" path="web\lib\codemirror\mode\dtd\dtd.js" comment="web\lib\codemirror\mode\dtd\dtd.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\dtd\index.html" comment="web\lib\codemirror\mode\dtd\index.html"/>
+					</folder>
+					<folder name="dylan" path="web\lib\codemirror\mode\dylan" comment="web\lib\codemirror\mode\dylan">
+						<file name="dylan.js" path="web\lib\codemirror\mode\dylan\dylan.js" comment="web\lib\codemirror\mode\dylan\dylan.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\dylan\index.html" comment="web\lib\codemirror\mode\dylan\index.html"/>
+					</folder>
+					<folder name="ebnf" path="web\lib\codemirror\mode\ebnf" comment="web\lib\codemirror\mode\ebnf">
+						<file name="ebnf.js" path="web\lib\codemirror\mode\ebnf\ebnf.js" comment="web\lib\codemirror\mode\ebnf\ebnf.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\ebnf\index.html" comment="web\lib\codemirror\mode\ebnf\index.html"/>
+					</folder>
+					<folder name="ecl" path="web\lib\codemirror\mode\ecl" comment="web\lib\codemirror\mode\ecl">
+						<file name="ecl.js" path="web\lib\codemirror\mode\ecl\ecl.js" comment="web\lib\codemirror\mode\ecl\ecl.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\ecl\index.html" comment="web\lib\codemirror\mode\ecl\index.html"/>
+					</folder>
+					<folder name="eiffel" path="web\lib\codemirror\mode\eiffel" comment="web\lib\codemirror\mode\eiffel">
+						<file name="eiffel.js" path="web\lib\codemirror\mode\eiffel\eiffel.js" comment="web\lib\codemirror\mode\eiffel\eiffel.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\eiffel\index.html" comment="web\lib\codemirror\mode\eiffel\index.html"/>
+					</folder>
+					<folder name="erlang" path="web\lib\codemirror\mode\erlang" comment="web\lib\codemirror\mode\erlang">
+						<file name="erlang.js" path="web\lib\codemirror\mode\erlang\erlang.js" comment="web\lib\codemirror\mode\erlang\erlang.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\erlang\index.html" comment="web\lib\codemirror\mode\erlang\index.html"/>
+					</folder>
+					<folder name="forth" path="web\lib\codemirror\mode\forth" comment="web\lib\codemirror\mode\forth">
+						<file name="forth.js" path="web\lib\codemirror\mode\forth\forth.js" comment="web\lib\codemirror\mode\forth\forth.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\forth\index.html" comment="web\lib\codemirror\mode\forth\index.html"/>
+					</folder>
+					<folder name="fortran" path="web\lib\codemirror\mode\fortran" comment="web\lib\codemirror\mode\fortran">
+						<file name="fortran.js" path="web\lib\codemirror\mode\fortran\fortran.js" comment="web\lib\codemirror\mode\fortran\fortran.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\fortran\index.html" comment="web\lib\codemirror\mode\fortran\index.html"/>
+					</folder>
+					<folder name="gas" path="web\lib\codemirror\mode\gas" comment="web\lib\codemirror\mode\gas">
+						<file name="gas.js" path="web\lib\codemirror\mode\gas\gas.js" comment="web\lib\codemirror\mode\gas\gas.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\gas\index.html" comment="web\lib\codemirror\mode\gas\index.html"/>
+					</folder>
+					<folder name="gfm" path="web\lib\codemirror\mode\gfm" comment="web\lib\codemirror\mode\gfm">
+						<file name="gfm.js" path="web\lib\codemirror\mode\gfm\gfm.js" comment="web\lib\codemirror\mode\gfm\gfm.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\gfm\index.html" comment="web\lib\codemirror\mode\gfm\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\gfm\test.js" comment="web\lib\codemirror\mode\gfm\test.js"/>
+					</folder>
+					<folder name="gherkin" path="web\lib\codemirror\mode\gherkin" comment="web\lib\codemirror\mode\gherkin">
+						<file name="gherkin.js" path="web\lib\codemirror\mode\gherkin\gherkin.js" comment="web\lib\codemirror\mode\gherkin\gherkin.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\gherkin\index.html" comment="web\lib\codemirror\mode\gherkin\index.html"/>
+					</folder>
+					<folder name="go" path="web\lib\codemirror\mode\go" comment="web\lib\codemirror\mode\go">
+						<file name="go.js" path="web\lib\codemirror\mode\go\go.js" comment="web\lib\codemirror\mode\go\go.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\go\index.html" comment="web\lib\codemirror\mode\go\index.html"/>
+					</folder>
+					<folder name="groovy" path="web\lib\codemirror\mode\groovy" comment="web\lib\codemirror\mode\groovy">
+						<file name="groovy.js" path="web\lib\codemirror\mode\groovy\groovy.js" comment="web\lib\codemirror\mode\groovy\groovy.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\groovy\index.html" comment="web\lib\codemirror\mode\groovy\index.html"/>
+					</folder>
+					<folder name="haml" path="web\lib\codemirror\mode\haml" comment="web\lib\codemirror\mode\haml">
+						<file name="haml.js" path="web\lib\codemirror\mode\haml\haml.js" comment="web\lib\codemirror\mode\haml\haml.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\haml\index.html" comment="web\lib\codemirror\mode\haml\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\haml\test.js" comment="web\lib\codemirror\mode\haml\test.js"/>
+					</folder>
+					<folder name="haskell" path="web\lib\codemirror\mode\haskell" comment="web\lib\codemirror\mode\haskell">
+						<file name="haskell.js" path="web\lib\codemirror\mode\haskell\haskell.js" comment="web\lib\codemirror\mode\haskell\haskell.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\haskell\index.html" comment="web\lib\codemirror\mode\haskell\index.html"/>
+					</folder>
+					<folder name="haxe" path="web\lib\codemirror\mode\haxe" comment="web\lib\codemirror\mode\haxe">
+						<file name="haxe.js" path="web\lib\codemirror\mode\haxe\haxe.js" comment="web\lib\codemirror\mode\haxe\haxe.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\haxe\index.html" comment="web\lib\codemirror\mode\haxe\index.html"/>
+					</folder>
+					<folder name="htmlembedded" path="web\lib\codemirror\mode\htmlembedded" comment="web\lib\codemirror\mode\htmlembedded">
+						<file name="htmlembedded.js" path="web\lib\codemirror\mode\htmlembedded\htmlembedded.js" comment="web\lib\codemirror\mode\htmlembedded\htmlembedded.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\htmlembedded\index.html" comment="web\lib\codemirror\mode\htmlembedded\index.html"/>
+					</folder>
+					<folder name="htmlmixed" path="web\lib\codemirror\mode\htmlmixed" comment="web\lib\codemirror\mode\htmlmixed">
+						<file name="htmlmixed.js" path="web\lib\codemirror\mode\htmlmixed\htmlmixed.js" comment="web\lib\codemirror\mode\htmlmixed\htmlmixed.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\htmlmixed\index.html" comment="web\lib\codemirror\mode\htmlmixed\index.html"/>
+					</folder>
+					<folder name="http" path="web\lib\codemirror\mode\http" comment="web\lib\codemirror\mode\http">
+						<file name="http.js" path="web\lib\codemirror\mode\http\http.js" comment="web\lib\codemirror\mode\http\http.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\http\index.html" comment="web\lib\codemirror\mode\http\index.html"/>
+					</folder>
+					<folder name="idl" path="web\lib\codemirror\mode\idl" comment="web\lib\codemirror\mode\idl">
+						<file name="idl.js" path="web\lib\codemirror\mode\idl\idl.js" comment="web\lib\codemirror\mode\idl\idl.js"/>
+						<file name="index.html" path="web\lib\codemirror\mode\idl\index.html" comment="web\lib\codemirror\mode\idl\index.html"/>
+					</folder>
+					<folder name="jade" path="web\lib\codemirror\mode\jade" comment="web\lib\codemirror\mode\jade">
+						<file name="index.html" path="web\lib\codemirror\mode\jade\index.html" comment="web\lib\codemirror\mode\jade\index.html"/>
+						<file name="jade.js" path="web\lib\codemirror\mode\jade\jade.js" comment="web\lib\codemirror\mode\jade\jade.js"/>
+					</folder>
+					<folder name="javascript" path="web\lib\codemirror\mode\javascript" comment="web\lib\codemirror\mode\javascript">
+						<file name="index.html" path="web\lib\codemirror\mode\javascript\index.html" comment="web\lib\codemirror\mode\javascript\index.html"/>
+						<file name="javascript.js" path="web\lib\codemirror\mode\javascript\javascript.js" comment="web\lib\codemirror\mode\javascript\javascript.js"/>
+						<file name="json-ld.html" path="web\lib\codemirror\mode\javascript\json-ld.html" comment="web\lib\codemirror\mode\javascript\json-ld.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\javascript\test.js" comment="web\lib\codemirror\mode\javascript\test.js"/>
+						<file name="typescript.html" path="web\lib\codemirror\mode\javascript\typescript.html" comment="web\lib\codemirror\mode\javascript\typescript.html"/>
+					</folder>
+					<folder name="jinja2" path="web\lib\codemirror\mode\jinja2" comment="web\lib\codemirror\mode\jinja2">
+						<file name="index.html" path="web\lib\codemirror\mode\jinja2\index.html" comment="web\lib\codemirror\mode\jinja2\index.html"/>
+						<file name="jinja2.js" path="web\lib\codemirror\mode\jinja2\jinja2.js" comment="web\lib\codemirror\mode\jinja2\jinja2.js"/>
+					</folder>
+					<folder name="julia" path="web\lib\codemirror\mode\julia" comment="web\lib\codemirror\mode\julia">
+						<file name="index.html" path="web\lib\codemirror\mode\julia\index.html" comment="web\lib\codemirror\mode\julia\index.html"/>
+						<file name="julia.js" path="web\lib\codemirror\mode\julia\julia.js" comment="web\lib\codemirror\mode\julia\julia.js"/>
+					</folder>
+					<folder name="kotlin" path="web\lib\codemirror\mode\kotlin" comment="web\lib\codemirror\mode\kotlin">
+						<file name="index.html" path="web\lib\codemirror\mode\kotlin\index.html" comment="web\lib\codemirror\mode\kotlin\index.html"/>
+						<file name="kotlin.js" path="web\lib\codemirror\mode\kotlin\kotlin.js" comment="web\lib\codemirror\mode\kotlin\kotlin.js"/>
+					</folder>
+					<folder name="livescript" path="web\lib\codemirror\mode\livescript" comment="web\lib\codemirror\mode\livescript">
+						<file name="index.html" path="web\lib\codemirror\mode\livescript\index.html" comment="web\lib\codemirror\mode\livescript\index.html"/>
+						<file name="livescript.js" path="web\lib\codemirror\mode\livescript\livescript.js" comment="web\lib\codemirror\mode\livescript\livescript.js"/>
+					</folder>
+					<folder name="lua" path="web\lib\codemirror\mode\lua" comment="web\lib\codemirror\mode\lua">
+						<file name="index.html" path="web\lib\codemirror\mode\lua\index.html" comment="web\lib\codemirror\mode\lua\index.html"/>
+						<file name="lua.js" path="web\lib\codemirror\mode\lua\lua.js" comment="web\lib\codemirror\mode\lua\lua.js"/>
+					</folder>
+					<folder name="markdown" path="web\lib\codemirror\mode\markdown" comment="web\lib\codemirror\mode\markdown">
+						<file name="index.html" path="web\lib\codemirror\mode\markdown\index.html" comment="web\lib\codemirror\mode\markdown\index.html"/>
+						<file name="markdown.js" path="web\lib\codemirror\mode\markdown\markdown.js" comment="web\lib\codemirror\mode\markdown\markdown.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\markdown\test.js" comment="web\lib\codemirror\mode\markdown\test.js"/>
+					</folder>
+					<folder name="mirc" path="web\lib\codemirror\mode\mirc" comment="web\lib\codemirror\mode\mirc">
+						<file name="index.html" path="web\lib\codemirror\mode\mirc\index.html" comment="web\lib\codemirror\mode\mirc\index.html"/>
+						<file name="mirc.js" path="web\lib\codemirror\mode\mirc\mirc.js" comment="web\lib\codemirror\mode\mirc\mirc.js"/>
+					</folder>
+					<folder name="mllike" path="web\lib\codemirror\mode\mllike" comment="web\lib\codemirror\mode\mllike">
+						<file name="index.html" path="web\lib\codemirror\mode\mllike\index.html" comment="web\lib\codemirror\mode\mllike\index.html"/>
+						<file name="mllike.js" path="web\lib\codemirror\mode\mllike\mllike.js" comment="web\lib\codemirror\mode\mllike\mllike.js"/>
+					</folder>
+					<folder name="modelica" path="web\lib\codemirror\mode\modelica" comment="web\lib\codemirror\mode\modelica">
+						<file name="index.html" path="web\lib\codemirror\mode\modelica\index.html" comment="web\lib\codemirror\mode\modelica\index.html"/>
+						<file name="modelica.js" path="web\lib\codemirror\mode\modelica\modelica.js" comment="web\lib\codemirror\mode\modelica\modelica.js"/>
+					</folder>
+					<folder name="nginx" path="web\lib\codemirror\mode\nginx" comment="web\lib\codemirror\mode\nginx">
+						<file name="index.html" path="web\lib\codemirror\mode\nginx\index.html" comment="web\lib\codemirror\mode\nginx\index.html"/>
+						<file name="nginx.js" path="web\lib\codemirror\mode\nginx\nginx.js" comment="web\lib\codemirror\mode\nginx\nginx.js"/>
+					</folder>
+					<folder name="ntriples" path="web\lib\codemirror\mode\ntriples" comment="web\lib\codemirror\mode\ntriples">
+						<file name="index.html" path="web\lib\codemirror\mode\ntriples\index.html" comment="web\lib\codemirror\mode\ntriples\index.html"/>
+						<file name="ntriples.js" path="web\lib\codemirror\mode\ntriples\ntriples.js" comment="web\lib\codemirror\mode\ntriples\ntriples.js"/>
+					</folder>
+					<folder name="octave" path="web\lib\codemirror\mode\octave" comment="web\lib\codemirror\mode\octave">
+						<file name="index.html" path="web\lib\codemirror\mode\octave\index.html" comment="web\lib\codemirror\mode\octave\index.html"/>
+						<file name="octave.js" path="web\lib\codemirror\mode\octave\octave.js" comment="web\lib\codemirror\mode\octave\octave.js"/>
+					</folder>
+					<folder name="pascal" path="web\lib\codemirror\mode\pascal" comment="web\lib\codemirror\mode\pascal">
+						<file name="index.html" path="web\lib\codemirror\mode\pascal\index.html" comment="web\lib\codemirror\mode\pascal\index.html"/>
+						<file name="pascal.js" path="web\lib\codemirror\mode\pascal\pascal.js" comment="web\lib\codemirror\mode\pascal\pascal.js"/>
+					</folder>
+					<folder name="pegjs" path="web\lib\codemirror\mode\pegjs" comment="web\lib\codemirror\mode\pegjs">
+						<file name="index.html" path="web\lib\codemirror\mode\pegjs\index.html" comment="web\lib\codemirror\mode\pegjs\index.html"/>
+						<file name="pegjs.js" path="web\lib\codemirror\mode\pegjs\pegjs.js" comment="web\lib\codemirror\mode\pegjs\pegjs.js"/>
+					</folder>
+					<folder name="perl" path="web\lib\codemirror\mode\perl" comment="web\lib\codemirror\mode\perl">
+						<file name="index.html" path="web\lib\codemirror\mode\perl\index.html" comment="web\lib\codemirror\mode\perl\index.html"/>
+						<file name="perl.js" path="web\lib\codemirror\mode\perl\perl.js" comment="web\lib\codemirror\mode\perl\perl.js"/>
+					</folder>
+					<folder name="php" path="web\lib\codemirror\mode\php" comment="web\lib\codemirror\mode\php">
+						<file name="index.html" path="web\lib\codemirror\mode\php\index.html" comment="web\lib\codemirror\mode\php\index.html"/>
+						<file name="php.js" path="web\lib\codemirror\mode\php\php.js" comment="web\lib\codemirror\mode\php\php.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\php\test.js" comment="web\lib\codemirror\mode\php\test.js"/>
+					</folder>
+					<folder name="pig" path="web\lib\codemirror\mode\pig" comment="web\lib\codemirror\mode\pig">
+						<file name="index.html" path="web\lib\codemirror\mode\pig\index.html" comment="web\lib\codemirror\mode\pig\index.html"/>
+						<file name="pig.js" path="web\lib\codemirror\mode\pig\pig.js" comment="web\lib\codemirror\mode\pig\pig.js"/>
+					</folder>
+					<folder name="properties" path="web\lib\codemirror\mode\properties" comment="web\lib\codemirror\mode\properties">
+						<file name="index.html" path="web\lib\codemirror\mode\properties\index.html" comment="web\lib\codemirror\mode\properties\index.html"/>
+						<file name="properties.js" path="web\lib\codemirror\mode\properties\properties.js" comment="web\lib\codemirror\mode\properties\properties.js"/>
+					</folder>
+					<folder name="puppet" path="web\lib\codemirror\mode\puppet" comment="web\lib\codemirror\mode\puppet">
+						<file name="index.html" path="web\lib\codemirror\mode\puppet\index.html" comment="web\lib\codemirror\mode\puppet\index.html"/>
+						<file name="puppet.js" path="web\lib\codemirror\mode\puppet\puppet.js" comment="web\lib\codemirror\mode\puppet\puppet.js"/>
+					</folder>
+					<folder name="python" path="web\lib\codemirror\mode\python" comment="web\lib\codemirror\mode\python">
+						<file name="index.html" path="web\lib\codemirror\mode\python\index.html" comment="web\lib\codemirror\mode\python\index.html"/>
+						<file name="python.js" path="web\lib\codemirror\mode\python\python.js" comment="web\lib\codemirror\mode\python\python.js"/>
+					</folder>
+					<folder name="q" path="web\lib\codemirror\mode\q" comment="web\lib\codemirror\mode\q">
+						<file name="index.html" path="web\lib\codemirror\mode\q\index.html" comment="web\lib\codemirror\mode\q\index.html"/>
+						<file name="q.js" path="web\lib\codemirror\mode\q\q.js" comment="web\lib\codemirror\mode\q\q.js"/>
+					</folder>
+					<folder name="r" path="web\lib\codemirror\mode\r" comment="web\lib\codemirror\mode\r">
+						<file name="index.html" path="web\lib\codemirror\mode\r\index.html" comment="web\lib\codemirror\mode\r\index.html"/>
+						<file name="r.js" path="web\lib\codemirror\mode\r\r.js" comment="web\lib\codemirror\mode\r\r.js"/>
+					</folder>
+					<folder name="rpm" path="web\lib\codemirror\mode\rpm" comment="web\lib\codemirror\mode\rpm">
+						<file name="index.html" path="web\lib\codemirror\mode\rpm\index.html" comment="web\lib\codemirror\mode\rpm\index.html"/>
+						<file name="rpm.js" path="web\lib\codemirror\mode\rpm\rpm.js" comment="web\lib\codemirror\mode\rpm\rpm.js"/>
+						<folder name="changes" path="web\lib\codemirror\mode\rpm\changes" comment="web\lib\codemirror\mode\rpm\changes">
+							<file name="index.html" path="web\lib\codemirror\mode\rpm\changes\index.html" comment="web\lib\codemirror\mode\rpm\changes\index.html"/>
+						</folder>
+					</folder>
+					<folder name="rst" path="web\lib\codemirror\mode\rst" comment="web\lib\codemirror\mode\rst">
+						<file name="index.html" path="web\lib\codemirror\mode\rst\index.html" comment="web\lib\codemirror\mode\rst\index.html"/>
+						<file name="rst.js" path="web\lib\codemirror\mode\rst\rst.js" comment="web\lib\codemirror\mode\rst\rst.js"/>
+					</folder>
+					<folder name="ruby" path="web\lib\codemirror\mode\ruby" comment="web\lib\codemirror\mode\ruby">
+						<file name="index.html" path="web\lib\codemirror\mode\ruby\index.html" comment="web\lib\codemirror\mode\ruby\index.html"/>
+						<file name="ruby.js" path="web\lib\codemirror\mode\ruby\ruby.js" comment="web\lib\codemirror\mode\ruby\ruby.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\ruby\test.js" comment="web\lib\codemirror\mode\ruby\test.js"/>
+					</folder>
+					<folder name="rust" path="web\lib\codemirror\mode\rust" comment="web\lib\codemirror\mode\rust">
+						<file name="index.html" path="web\lib\codemirror\mode\rust\index.html" comment="web\lib\codemirror\mode\rust\index.html"/>
+						<file name="rust.js" path="web\lib\codemirror\mode\rust\rust.js" comment="web\lib\codemirror\mode\rust\rust.js"/>
+					</folder>
+					<folder name="sass" path="web\lib\codemirror\mode\sass" comment="web\lib\codemirror\mode\sass">
+						<file name="index.html" path="web\lib\codemirror\mode\sass\index.html" comment="web\lib\codemirror\mode\sass\index.html"/>
+						<file name="sass.js" path="web\lib\codemirror\mode\sass\sass.js" comment="web\lib\codemirror\mode\sass\sass.js"/>
+					</folder>
+					<folder name="scheme" path="web\lib\codemirror\mode\scheme" comment="web\lib\codemirror\mode\scheme">
+						<file name="index.html" path="web\lib\codemirror\mode\scheme\index.html" comment="web\lib\codemirror\mode\scheme\index.html"/>
+						<file name="scheme.js" path="web\lib\codemirror\mode\scheme\scheme.js" comment="web\lib\codemirror\mode\scheme\scheme.js"/>
+					</folder>
+					<folder name="shell" path="web\lib\codemirror\mode\shell" comment="web\lib\codemirror\mode\shell">
+						<file name="index.html" path="web\lib\codemirror\mode\shell\index.html" comment="web\lib\codemirror\mode\shell\index.html"/>
+						<file name="shell.js" path="web\lib\codemirror\mode\shell\shell.js" comment="web\lib\codemirror\mode\shell\shell.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\shell\test.js" comment="web\lib\codemirror\mode\shell\test.js"/>
+					</folder>
+					<folder name="sieve" path="web\lib\codemirror\mode\sieve" comment="web\lib\codemirror\mode\sieve">
+						<file name="index.html" path="web\lib\codemirror\mode\sieve\index.html" comment="web\lib\codemirror\mode\sieve\index.html"/>
+						<file name="sieve.js" path="web\lib\codemirror\mode\sieve\sieve.js" comment="web\lib\codemirror\mode\sieve\sieve.js"/>
+					</folder>
+					<folder name="slim" path="web\lib\codemirror\mode\slim" comment="web\lib\codemirror\mode\slim">
+						<file name="index.html" path="web\lib\codemirror\mode\slim\index.html" comment="web\lib\codemirror\mode\slim\index.html"/>
+						<file name="slim.js" path="web\lib\codemirror\mode\slim\slim.js" comment="web\lib\codemirror\mode\slim\slim.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\slim\test.js" comment="web\lib\codemirror\mode\slim\test.js"/>
+					</folder>
+					<folder name="smalltalk" path="web\lib\codemirror\mode\smalltalk" comment="web\lib\codemirror\mode\smalltalk">
+						<file name="index.html" path="web\lib\codemirror\mode\smalltalk\index.html" comment="web\lib\codemirror\mode\smalltalk\index.html"/>
+						<file name="smalltalk.js" path="web\lib\codemirror\mode\smalltalk\smalltalk.js" comment="web\lib\codemirror\mode\smalltalk\smalltalk.js"/>
+					</folder>
+					<folder name="smarty" path="web\lib\codemirror\mode\smarty" comment="web\lib\codemirror\mode\smarty">
+						<file name="index.html" path="web\lib\codemirror\mode\smarty\index.html" comment="web\lib\codemirror\mode\smarty\index.html"/>
+						<file name="smarty.js" path="web\lib\codemirror\mode\smarty\smarty.js" comment="web\lib\codemirror\mode\smarty\smarty.js"/>
+					</folder>
+					<folder name="smartymixed" path="web\lib\codemirror\mode\smartymixed" comment="web\lib\codemirror\mode\smartymixed">
+						<file name="index.html" path="web\lib\codemirror\mode\smartymixed\index.html" comment="web\lib\codemirror\mode\smartymixed\index.html"/>
+						<file name="smartymixed.js" path="web\lib\codemirror\mode\smartymixed\smartymixed.js" comment="web\lib\codemirror\mode\smartymixed\smartymixed.js"/>
+					</folder>
+					<folder name="solr" path="web\lib\codemirror\mode\solr" comment="web\lib\codemirror\mode\solr">
+						<file name="index.html" path="web\lib\codemirror\mode\solr\index.html" comment="web\lib\codemirror\mode\solr\index.html"/>
+						<file name="solr.js" path="web\lib\codemirror\mode\solr\solr.js" comment="web\lib\codemirror\mode\solr\solr.js"/>
+					</folder>
+					<folder name="soy" path="web\lib\codemirror\mode\soy" comment="web\lib\codemirror\mode\soy">
+						<file name="index.html" path="web\lib\codemirror\mode\soy\index.html" comment="web\lib\codemirror\mode\soy\index.html"/>
+						<file name="soy.js" path="web\lib\codemirror\mode\soy\soy.js" comment="web\lib\codemirror\mode\soy\soy.js"/>
+					</folder>
+					<folder name="sparql" path="web\lib\codemirror\mode\sparql" comment="web\lib\codemirror\mode\sparql">
+						<file name="index.html" path="web\lib\codemirror\mode\sparql\index.html" comment="web\lib\codemirror\mode\sparql\index.html"/>
+						<file name="sparql.js" path="web\lib\codemirror\mode\sparql\sparql.js" comment="web\lib\codemirror\mode\sparql\sparql.js"/>
+					</folder>
+					<folder name="spreadsheet" path="web\lib\codemirror\mode\spreadsheet" comment="web\lib\codemirror\mode\spreadsheet">
+						<file name="index.html" path="web\lib\codemirror\mode\spreadsheet\index.html" comment="web\lib\codemirror\mode\spreadsheet\index.html"/>
+						<file name="spreadsheet.js" path="web\lib\codemirror\mode\spreadsheet\spreadsheet.js" comment="web\lib\codemirror\mode\spreadsheet\spreadsheet.js"/>
+					</folder>
+					<folder name="sql" path="web\lib\codemirror\mode\sql" comment="web\lib\codemirror\mode\sql">
+						<file name="index.html" path="web\lib\codemirror\mode\sql\index.html" comment="web\lib\codemirror\mode\sql\index.html"/>
+						<file name="sql.js" path="web\lib\codemirror\mode\sql\sql.js" comment="web\lib\codemirror\mode\sql\sql.js"/>
+					</folder>
+					<folder name="stex" path="web\lib\codemirror\mode\stex" comment="web\lib\codemirror\mode\stex">
+						<file name="index.html" path="web\lib\codemirror\mode\stex\index.html" comment="web\lib\codemirror\mode\stex\index.html"/>
+						<file name="stex.js" path="web\lib\codemirror\mode\stex\stex.js" comment="web\lib\codemirror\mode\stex\stex.js"/>
+						<file name="test.js" path="web\lib\codemirror\mode\stex\test.js" comment="web\lib\codemirror\mode\stex\test.js"/>
+					</folder>
+					<folder name="stylus" path="web\lib\codemirror\mode\stylus" comment="web\lib\codemirror\mode\stylus">
+						<file name="index.html" path="web\lib\codemirror\mode\stylus\index.html" comment="web\lib\codemirror\mode\stylus\index.html"/>
+						<file name="stylus.js" path="web\lib\codemirror\mode\stylus\stylus.js" comment="web\lib\codemirror\mode\stylus\stylus.js"/>
+					</folder>
+					<folder name="tcl" path="web\lib\codemirror\mode\tcl" comment="web\lib\codemirror\mode\tcl">
+						<file name="index.html" path="web\lib\codemirror\mode\tcl\index.html" comment="web\lib\codemirror\mode\tcl\index.html"/>
+						<file name="tcl.js" path="web\lib\codemirror\mode\tcl\tcl.js" comment="web\lib\codemirror\mode\tcl\tcl.js"/>
+					</folder>
+					<folder name="textile" path="web\lib\codemirror\mode\textile" comment="web\lib\codemirror\mode\textile">
+						<file name="index.html" path="web\lib\codemirror\mode\textile\index.html" comment="web\lib\codemirror\mode\textile\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\textile\test.js" comment="web\lib\codemirror\mode\textile\test.js"/>
+						<file name="textile.js" path="web\lib\codemirror\mode\textile\textile.js" comment="web\lib\codemirror\mode\textile\textile.js"/>
+					</folder>
+					<folder name="tiddlywiki" path="web\lib\codemirror\mode\tiddlywiki" comment="web\lib\codemirror\mode\tiddlywiki">
+						<file name="index.html" path="web\lib\codemirror\mode\tiddlywiki\index.html" comment="web\lib\codemirror\mode\tiddlywiki\index.html"/>
+						<file name="tiddlywiki.css" path="web\lib\codemirror\mode\tiddlywiki\tiddlywiki.css" comment="web\lib\codemirror\mode\tiddlywiki\tiddlywiki.css"/>
+						<file name="tiddlywiki.js" path="web\lib\codemirror\mode\tiddlywiki\tiddlywiki.js" comment="web\lib\codemirror\mode\tiddlywiki\tiddlywiki.js"/>
+					</folder>
+					<folder name="tiki" path="web\lib\codemirror\mode\tiki" comment="web\lib\codemirror\mode\tiki">
+						<file name="index.html" path="web\lib\codemirror\mode\tiki\index.html" comment="web\lib\codemirror\mode\tiki\index.html"/>
+						<file name="tiki.css" path="web\lib\codemirror\mode\tiki\tiki.css" comment="web\lib\codemirror\mode\tiki\tiki.css"/>
+						<file name="tiki.js" path="web\lib\codemirror\mode\tiki\tiki.js" comment="web\lib\codemirror\mode\tiki\tiki.js"/>
+					</folder>
+					<folder name="toml" path="web\lib\codemirror\mode\toml" comment="web\lib\codemirror\mode\toml">
+						<file name="index.html" path="web\lib\codemirror\mode\toml\index.html" comment="web\lib\codemirror\mode\toml\index.html"/>
+						<file name="toml.js" path="web\lib\codemirror\mode\toml\toml.js" comment="web\lib\codemirror\mode\toml\toml.js"/>
+					</folder>
+					<folder name="tornado" path="web\lib\codemirror\mode\tornado" comment="web\lib\codemirror\mode\tornado">
+						<file name="index.html" path="web\lib\codemirror\mode\tornado\index.html" comment="web\lib\codemirror\mode\tornado\index.html"/>
+						<file name="tornado.js" path="web\lib\codemirror\mode\tornado\tornado.js" comment="web\lib\codemirror\mode\tornado\tornado.js"/>
+					</folder>
+					<folder name="turtle" path="web\lib\codemirror\mode\turtle" comment="web\lib\codemirror\mode\turtle">
+						<file name="index.html" path="web\lib\codemirror\mode\turtle\index.html" comment="web\lib\codemirror\mode\turtle\index.html"/>
+						<file name="turtle.js" path="web\lib\codemirror\mode\turtle\turtle.js" comment="web\lib\codemirror\mode\turtle\turtle.js"/>
+					</folder>
+					<folder name="vb" path="web\lib\codemirror\mode\vb" comment="web\lib\codemirror\mode\vb">
+						<file name="index.html" path="web\lib\codemirror\mode\vb\index.html" comment="web\lib\codemirror\mode\vb\index.html"/>
+						<file name="vb.js" path="web\lib\codemirror\mode\vb\vb.js" comment="web\lib\codemirror\mode\vb\vb.js"/>
+					</folder>
+					<folder name="vbscript" path="web\lib\codemirror\mode\vbscript" comment="web\lib\codemirror\mode\vbscript">
+						<file name="index.html" path="web\lib\codemirror\mode\vbscript\index.html" comment="web\lib\codemirror\mode\vbscript\index.html"/>
+						<file name="vbscript.js" path="web\lib\codemirror\mode\vbscript\vbscript.js" comment="web\lib\codemirror\mode\vbscript\vbscript.js"/>
+					</folder>
+					<folder name="velocity" path="web\lib\codemirror\mode\velocity" comment="web\lib\codemirror\mode\velocity">
+						<file name="index.html" path="web\lib\codemirror\mode\velocity\index.html" comment="web\lib\codemirror\mode\velocity\index.html"/>
+						<file name="velocity.js" path="web\lib\codemirror\mode\velocity\velocity.js" comment="web\lib\codemirror\mode\velocity\velocity.js"/>
+					</folder>
+					<folder name="verilog" path="web\lib\codemirror\mode\verilog" comment="web\lib\codemirror\mode\verilog">
+						<file name="index.html" path="web\lib\codemirror\mode\verilog\index.html" comment="web\lib\codemirror\mode\verilog\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\verilog\test.js" comment="web\lib\codemirror\mode\verilog\test.js"/>
+						<file name="verilog.js" path="web\lib\codemirror\mode\verilog\verilog.js" comment="web\lib\codemirror\mode\verilog\verilog.js"/>
+					</folder>
+					<folder name="xml" path="web\lib\codemirror\mode\xml" comment="web\lib\codemirror\mode\xml">
+						<file name="index.html" path="web\lib\codemirror\mode\xml\index.html" comment="web\lib\codemirror\mode\xml\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\xml\test.js" comment="web\lib\codemirror\mode\xml\test.js"/>
+						<file name="xml.js" path="web\lib\codemirror\mode\xml\xml.js" comment="web\lib\codemirror\mode\xml\xml.js"/>
+					</folder>
+					<folder name="xquery" path="web\lib\codemirror\mode\xquery" comment="web\lib\codemirror\mode\xquery">
+						<file name="index.html" path="web\lib\codemirror\mode\xquery\index.html" comment="web\lib\codemirror\mode\xquery\index.html"/>
+						<file name="test.js" path="web\lib\codemirror\mode\xquery\test.js" comment="web\lib\codemirror\mode\xquery\test.js"/>
+						<file name="xquery.js" path="web\lib\codemirror\mode\xquery\xquery.js" comment="web\lib\codemirror\mode\xquery\xquery.js"/>
+					</folder>
+					<folder name="yaml" path="web\lib\codemirror\mode\yaml" comment="web\lib\codemirror\mode\yaml">
+						<file name="index.html" path="web\lib\codemirror\mode\yaml\index.html" comment="web\lib\codemirror\mode\yaml\index.html"/>
+						<file name="yaml.js" path="web\lib\codemirror\mode\yaml\yaml.js" comment="web\lib\codemirror\mode\yaml\yaml.js"/>
+					</folder>
+					<folder name="z80" path="web\lib\codemirror\mode\z80" comment="web\lib\codemirror\mode\z80">
+						<file name="index.html" path="web\lib\codemirror\mode\z80\index.html" comment="web\lib\codemirror\mode\z80\index.html"/>
+						<file name="z80.js" path="web\lib\codemirror\mode\z80\z80.js" comment="web\lib\codemirror\mode\z80\z80.js"/>
+					</folder>
+				</folder>
+				<folder name="theme" path="web\lib\codemirror\theme" comment="web\lib\codemirror\theme">
+					<file name="pastel-on-dark.css" path="web\lib\codemirror\theme\pastel-on-dark.css" comment="web\lib\codemirror\theme\pastel-on-dark.css"/>
+				</folder>
+			</folder>
+			<folder name="KaTeX" path="web\lib\KaTeX" comment="web\lib\KaTeX" local="true" embed="true" ignored="false">
+				<file name="katex.min.css" path="web\lib\KaTeX\katex.min.css" comment="web\lib\KaTeX\katex.min.css"/>
+				<file name="katex.min.js" path="web\lib\KaTeX\katex.min.js" comment="web\lib\KaTeX\katex.min.js"/>
+				<folder name="fonts" path="web\lib\KaTeX\fonts" comment="web\lib\KaTeX\fonts">
+					<file name="KaTeX_Main-Regular.woff2" path="web\lib\KaTeX\fonts\KaTeX_Main-Regular.woff2" comment="web\lib\KaTeX\fonts\KaTeX_Main-Regular.woff2"/>
+					<file name="KaTeX_Math-Italic.woff2" path="web\lib\KaTeX\fonts\KaTeX_Math-Italic.woff2" comment="web\lib\KaTeX\fonts\KaTeX_Math-Italic.woff2"/>
+					<file name="KaTeX_Size1-Regular.woff2" path="web\lib\KaTeX\fonts\KaTeX_Size1-Regular.woff2" comment="web\lib\KaTeX\fonts\KaTeX_Size1-Regular.woff2"/>
+					<file name="KaTeX_Size2-Regular.woff2" path="web\lib\KaTeX\fonts\KaTeX_Size2-Regular.woff2" comment="web\lib\KaTeX\fonts\KaTeX_Size2-Regular.woff2"/>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="plugins" path="web\plugins" comment="web\plugins" local="true" embed="true" ignored="false">
+			<file name="plugin-template.js" path="web\plugins\plugin-template.js" comment="web\plugins\plugin-template.js"/>
+			<folder name="code-block-dialog" path="web\plugins\code-block-dialog" comment="web\plugins\code-block-dialog" local="true" embed="true" ignored="false">
+				<file name="code-block-dialog.js" path="web\plugins\code-block-dialog\code-block-dialog.js" comment="web\plugins\code-block-dialog\code-block-dialog.js"/>
+			</folder>
+			<folder name="goto-line-dialog" path="web\plugins\goto-line-dialog" comment="web\plugins\goto-line-dialog" local="true" embed="true" ignored="false">
+				<file name="goto-line-dialog.js" path="web\plugins\goto-line-dialog\goto-line-dialog.js" comment="web\plugins\goto-line-dialog\goto-line-dialog.js"/>
+			</folder>
+			<folder name="html-entities-dialog" path="web\plugins\html-entities-dialog" comment="web\plugins\html-entities-dialog" local="true" embed="true" ignored="false">
+				<file name="html-entities-dialog.js" path="web\plugins\html-entities-dialog\html-entities-dialog.js" comment="web\plugins\html-entities-dialog\html-entities-dialog.js"/>
+				<file name="html-entities.json" path="web\plugins\html-entities-dialog\html-entities.json" comment="web\plugins\html-entities-dialog\html-entities.json"/>
+			</folder>
+			<folder name="image-dialog" path="web\plugins\image-dialog" comment="web\plugins\image-dialog" local="true" embed="true" ignored="false">
+				<file name="image-dialog.js" path="web\plugins\image-dialog\image-dialog.js" comment="web\plugins\image-dialog\image-dialog.js"/>
+			</folder>
+			<folder name="link-dialog" path="web\plugins\link-dialog" comment="web\plugins\link-dialog" local="true" embed="true" ignored="false">
+				<file name="link-dialog.js" path="web\plugins\link-dialog\link-dialog.js" comment="web\plugins\link-dialog\link-dialog.js"/>
+			</folder>
+			<folder name="preformatted-text-dialog" path="web\plugins\preformatted-text-dialog" comment="web\plugins\preformatted-text-dialog" local="true" embed="true" ignored="false">
+				<file name="preformatted-text-dialog.js" path="web\plugins\preformatted-text-dialog\preformatted-text-dialog.js" comment="web\plugins\preformatted-text-dialog\preformatted-text-dialog.js"/>
+			</folder>
+			<folder name="reference-link-dialog" path="web\plugins\reference-link-dialog" comment="web\plugins\reference-link-dialog" local="true" embed="true" ignored="false">
+				<file name="reference-link-dialog.js" path="web\plugins\reference-link-dialog\reference-link-dialog.js" comment="web\plugins\reference-link-dialog\reference-link-dialog.js"/>
+			</folder>
+			<folder name="table-dialog" path="web\plugins\table-dialog" comment="web\plugins\table-dialog" local="true" embed="true" ignored="false">
+				<file name="table-dialog.js" path="web\plugins\table-dialog\table-dialog.js" comment="web\plugins\table-dialog\table-dialog.js"/>
+			</folder>
+			<folder name="help-dialog" path="web\plugins\help-dialog" comment="web\plugins\help-dialog" local="true" embed="true" ignored="false">
+				<file name="help-dialog.js" path="web\plugins\help-dialog\help-dialog.js" comment="web\plugins\help-dialog\help-dialog.js"/>
+				<file name="help.md" path="web\plugins\help-dialog\help.md" comment="web\plugins\help-dialog\help.md"/>
+			</folder>
+		</folder>
+		<file name="jquery.min.js" path="web\jquery.min.js" comment="web\jquery.min.js"/>
+	</folder>
+</project>
