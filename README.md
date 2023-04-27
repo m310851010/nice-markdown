@@ -6,19 +6,19 @@
 
 ## 下载地址
 
-[Nice Markdown-0.0.1.exe](/nice-markdown/releases/download/0.0.1/Nice.Markdown.exe)
+[Nice Markdown-0.0.1.exe](https://github.com/m310851010/nice-markdown/releases/download/0.0.1/Nice.Markdown.exe)
 
 ------------
 
 ## 主题
 
-![Alt Text](/nice-markdown/raw/master/static/1.jpg)
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/1.jpg)
 
-![Alt Text](/nice-markdown/raw/master/static/2.jpg)
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/2.jpg)
 
-![Alt Text](/nice-markdown/raw/master/static/3.jpg)
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/3.jpg)
 
-![Alt Text](/nice-markdown/raw/master/static/4.jpg)
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/4.jpg)
 
 > 这篇文档由Nice Markdown编辑
 
