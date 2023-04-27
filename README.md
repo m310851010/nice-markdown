@@ -6,7 +6,7 @@
 
 ## 下载地址
 
-[Nice Markdown-0.0.1.exe](https://github.com/m310851010/nice-markdown/releases/download/0.0.1/Nice.Markdown.exe")
+[Nice Markdown-0.0.1.exe](https://github.com/m310851010/nice-markdown/releases/download/0.0.1/Nice.Markdown.exe)
 
 ------------
 
