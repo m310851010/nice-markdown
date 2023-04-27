@@ -16,8 +16,11 @@
 
 ![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/2.jpg)
 
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/3.jpg)
 
-> 这篇文档是使用Nice Markdown编写
+![Alt Text](https://github.com/m310851010/nice-markdown/raw/master/static/4.jpg)
+
+> 这篇文档由Nice Markdown编辑
 
 #### License
 
